@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<title>Какой ты мем с котом</title>
+		<link rel="stylesheet" href="../../css/css.css">
+		<link rel="stylesheet" href="test.css">
+	</head>
+
+	<body>
+
+		<header>
+			<!-- <div class="lending"> -->
+			<h1>Тесты</h1>
+			<h2>Множество тестов на ваш вкус</h2>
+			<!-- </div> -->
+			
+			<a href="../../index.html" class="button-2">Главная</a>
+			<a href="../choice.html" class="button-2">Тесты</a>	
+		</header>
+
+
+		<div id="n1" class="vopros">
+			<p>Ваша любимая еда</p>
+			<button class="rgb-button" onclick="count+=2; document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Пица</button>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Бургер</button>
+			<button class="rgb-button" onclick="count+=2; document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Миска рис</button>
+		</div>
+		<div id="n2" class="vopros">
+			<p>Какого цвета ваша кожа?</p>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">Чёрная</button>
+			<button class="rgb-button" onclick="document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">Белая</button>
+			<button class="rgb-button" onclick="count+=2; document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">Я житель африки</button>
+		</div>
+		<div id="n3" class="vopros">
+			<p>Коты или собаки?</p>
+			<button class="rgb-button" onclick="document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Собаки</button>
+			<button class="rgb-button" onclick="document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Нееееееееееет, коты лучше</button>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Вообще-то обезьяны</button>
+		</div>
+		<div id="n4" class="vopros">
+			<p>Чем вы занимались в НЧШ</p>
+			<button class="rgb-button" onclick="count+=3; document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Решал задачи дня</button>
+			<button class="rgb-button" onclick="document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Решал турниры</button>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Я учитель</button>
+			<button class="rgb-button" onclick="count+=2; document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Ботал</button>
+		</div>
+		<div id="n5" class="vopros">
+			<p>Вы лучший в задачах дня?</p>
+			<button class="rgb-button" onclick="count-=2; document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Что это такое?</button>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Я лютейший, меня не догонят</button>
+			<button class="rgb-button" onclick="document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Я решил 1 задачу и устал</button>
+		</div>
+
+		<div id="rez" class="rez">
+			<h1>Итог, Вы</h1>
+			<h1><div id="vi"></div></h1>
+			<img src="kot-selfi.jfif" id="i1" class="photo-hleb" style="height: 300px">
+			<img src="kotvbanke.jfif" id="i2" class="photo-hleb" style="height: 300px">
+			<img src="memn-papk.jfif" id="i3" class="photo-hleb" style="height: 300px">
+			<img src="kumarkot.png" id="i4" class="photo-hleb" style="height: 300px">
+		</div>
+	</body>
+
+	<script>
+		let count = 0;
+		let otv = 'кот';
+		function q(){
+			
+			if (count == 0 || count == 1) {
+				otv = 'Обнимающий кот';
+				document.getElementById('i2').style.display = "contents";
+				document.getElementById('i3').style.display = "contents";
+				document.getElementById('i4').style.display = "contents";
+			}
+			if (count == 2 || count == 3) {
+				otv = 'Кот в банке';
+				document.getElementById('i1').style.display = "contents";
+				document.getElementById('i3').style.display = "contents";
+				document.getElementById('i4').style.display = "contents";
+			}
+			if (count == 4 || count == 5 || count == 6) {
+				otv = 'Кот в очках';
+				document.getElementById('i1').style.display = "contents";
+				document.getElementById('i2').style.display = "contents";
+				document.getElementById('i4').style.display = "contents";
+			}
+			if (count == 7 || count == 8 || count == 9) {
+				otv = 'Шакальный кот';
+				document.getElementById('i1').style.display = "contents";
+				document.getElementById('i2').style.display = "contents";
+				document.getElementById('i3').style.display = "contents";
+			}
+			document.getElementById("vi").innerHTML = otv;
+		}
+	</script>
+</html>

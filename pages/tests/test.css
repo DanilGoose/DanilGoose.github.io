@@ -17,3 +17,8 @@
 .rgb-button {
 	margin: 5px;
 }
+.photo-hleb {
+	height: 200px;
+	display: none;
+	border-radius: 20px;
+}

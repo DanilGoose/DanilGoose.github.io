@@ -20,71 +20,66 @@
 
 
 		<div id="n1" class="vopros">
-			<p>Что вам больше нравится</p>
-			<button class="rgb-button" onclick="count+=1; document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Быть главным</button>
-			<button class="rgb-button" onclick="document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Направлять</button>
-			<button class="rgb-button" onclick="document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Читать книги</button>
+			<p>Когда вы родились?</p>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Летом</button>
+			<button class="rgb-button" onclick="document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Осенью</button>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Зимой</button>
+			<button class="rgb-button" onclick="document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Весной</button>
 		</div>
 		<div id="n2" class="vopros">
-			<p>Ваша цель в жизни</p>
-			<button class="rgb-button" onclick="count+=1; document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">Стать богатым</button>
-			<button class="rgb-button" onclick="count+=1; document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">Стать бомжом</button>
-			<button class="rgb-button" onclick="document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">У меня нет цели в жизни</button>
+			<p>Что главное в жизни?</p>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">Семья</button>
+			<button class="rgb-button" onclick="document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">Деньги</button>
+			<button class="rgb-button" onclick="document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">ХЗ</button>
 		</div>
 		<div id="n3" class="vopros">
-			<p>Вы знаете Даниила Ченченко?</p>
-			<button class="rgb-button" class="rgb-button" onclick="count+=1; document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Да</button>
-			<button class="rgb-button" class="rgb-button" onclick="document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Нет</button>
-			<button class="rgb-button" class="rgb-button" onclick="count+=2; document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Он мой краш</button>
+			<p>Вы ученик НЧШ?</p>
+			<button class="rgb-button" onclick="document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Да</button>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Нет</button>
+			<button class="rgb-button" onclick="count+=2; document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Я учусь в инженерке</button>
 		</div>
 		<div id="n4" class="vopros">
-			<p>Вы бы пошли за стаей, или вели бы?</p>
-			<button class="rgb-button" onclick="document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Пошёл</button>
-			<button class="rgb-button" onclick="document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Повёл</button>
-			<button class="rgb-button" onclick="count+=1; document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Я не волк чтобы быть в стае</button>
+			<p>Красноярск или Черноголовка?</p>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Красноярск</button>
+			<button class="rgb-button" onclick="document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Черноголовка</button>
+			<button class="rgb-button" onclick="count+=2; document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">РОССИЯ - СВЯЩЕННАЯ НАША ДЕРЖАВА</button>
 		</div>
 		<div id="n5" class="vopros">
-			<p>Html - это язык программирования?</p>
-			<button class="rgb-button" onclick="document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Конечно да!</button>
-			<button class="rgb-button" onclick="count+=1; document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Нет</button>
-			<button class="rgb-button" onclick="document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Кто?</button>
+			<p>Уважаете ли вы себя?</p>
+			<button class="rgb-button" onclick="document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Да</button>
+			<button class="rgb-button" onclick="document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Нет</button>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Я уважаю инженеров</button>
 		</div>
 
 		<div id="rez" class="rez">
 			<h1>Итог, Вы</h1>
 			<h1><div id="vi"></div></h1>
+			<img src="amhl.webp" id="i1" class="photo-hleb">
+			<img src="chhl.jfif" id="i2" class="photo-hleb">
+			<img src="bbhl.jpg" id="i3" class="photo-hleb">
 		</div>
-
 	</body>
 
 	<script>
 		let count = 0;
-		let otv = 'тег';
+		let otv = 'хлеб';
 		function q(){
 			
-			if (count == 0) {
-				otv = 'тег < p >';
+			if (count == 0 || count == 1 || count == 2 || count == 3) {
+				otv = 'Американский хлеб';
+				document.getElementById('i2').style.display = "contents";
+				document.getElementById('i3').style.display = "contents";
 			}
-			if (count == 1) {
-				otv = 'тег < h2 >';
+			if (count == 4 || count == 5) {
+				otv = 'Чёрный хлеб';
+				document.getElementById('i1').style.display = "contents";
+				document.getElementById('i3').style.display = "contents";
 			}
-			if (count == 2) {
-				otv = 'тег < a > ';
+			if (count == 6 || count == 7) {
+				otv = 'Белый хлеб';
+				document.getElementById('i1').style.display = "contents";
+				document.getElementById('i2').style.display = "contents";
 			}
-			if (count == 3) {
-				otv = 'тег < h1 >';
-			}
-			if (count == 4) {
-				otv = 'тег < div >';
-			}
-			if (count == 5) {
-				otv = 'тег < body >';
-			}
-			if (count == 6) {
-				otv = 'тег < html >';
-			}
-
-
 			document.getElementById("vi").innerHTML = otv;
 		}
 	</script>
