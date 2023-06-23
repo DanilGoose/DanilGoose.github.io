@@ -67,18 +67,15 @@
 			
 			if (count == 0 || count == 1 || count == 2 || count == 3) {
 				otv = 'Американский хлеб';
-				document.getElementById('i2').style.display = "contents";
-				document.getElementById('i3').style.display = "contents";
+				document.getElementById('i1').style.display = "block";
 			}
 			if (count == 4 || count == 5) {
 				otv = 'Чёрный хлеб';
-				document.getElementById('i1').style.display = "contents";
-				document.getElementById('i3').style.display = "contents";
+				document.getElementById('i2').style.display = "block";
 			}
 			if (count == 6 || count == 7) {
 				otv = 'Белый хлеб';
-				document.getElementById('i1').style.display = "contents";
-				document.getElementById('i2').style.display = "contents";
+				document.getElementById('i3').style.display = "block";
 			}
 			document.getElementById("vi").innerHTML = otv;
 		}

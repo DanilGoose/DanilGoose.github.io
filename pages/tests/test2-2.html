@@ -54,10 +54,10 @@
 		<div id="rez" class="rez">
 			<h1>Итог, Вы</h1>
 			<h1><div id="vi"></div></h1>
-			<img src="kot-selfi.jfif" id="i1" class="photo-hleb" style="height: 300px">
-			<img src="kotvbanke.jfif" id="i2" class="photo-hleb" style="height: 300px">
-			<img src="memn-papk.jfif" id="i3" class="photo-hleb" style="height: 300px">
-			<img src="kumarkot.png" id="i4" class="photo-hleb" style="height: 300px">
+			<img src="kot-selfi.jfif" id="i1" class="photo-hleb">
+			<img src="kotvbanke.jfif" id="i2" class="photo-hleb">
+			<img src="memn-papk.jfif" id="i3" class="photo-hleb">
+			<img src="kumarkot.png" id="i4" class="photo-hleb">
 		</div>
 	</body>
 
@@ -68,27 +68,19 @@
 			
 			if (count == 0 || count == 1) {
 				otv = 'Обнимающий кот';
-				document.getElementById('i2').style.display = "contents";
-				document.getElementById('i3').style.display = "contents";
-				document.getElementById('i4').style.display = "contents";
+				document.getElementById('i1').style.display = "block";
 			}
 			if (count == 2 || count == 3) {
 				otv = 'Кот в банке';
-				document.getElementById('i1').style.display = "contents";
-				document.getElementById('i3').style.display = "contents";
-				document.getElementById('i4').style.display = "contents";
+				document.getElementById('i2').style.display = "block";
 			}
 			if (count == 4 || count == 5 || count == 6) {
 				otv = 'Кот в очках';
-				document.getElementById('i1').style.display = "contents";
-				document.getElementById('i2').style.display = "contents";
-				document.getElementById('i4').style.display = "contents";
+				document.getElementById('i3').style.display = "block";
 			}
 			if (count == 7 || count == 8 || count == 9) {
 				otv = 'Шакальный кот';
-				document.getElementById('i1').style.display = "contents";
-				document.getElementById('i2').style.display = "contents";
-				document.getElementById('i3').style.display = "contents";
+				document.getElementById('i4').style.display = "block";
 			}
 			document.getElementById("vi").innerHTML = otv;
 		}
