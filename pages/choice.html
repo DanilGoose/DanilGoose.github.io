@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<title>Главная страница</title>
+		<link rel="stylesheet" href="../css/css.css">
+		<link rel="stylesheet" href="../css/choice.css">
+	</head>
+
+	<body>
+
+		<header>
+			<!-- <div class="lending"> -->
+			<h1>Тесты</h1>
+			<h2>Множество тестов на ваш вкус</h2>
+			<!-- </div> -->
+			
+			<a href="index.html" class="button-2">Главная</a>
+			<a href="choice.html" class="button-2">Тесты</a>	
+		</header>
+
+		<div class="choice">
+			<h1>Выбор теста</h1>
+			<div id="themes">
+				<div>
+					<p>Программирование</p>
+					<button class="button-1" id="t1" onclick="f1()">Выбрать!</button>
+				</div>
+				<div>
+					<p>Случайные тесты!</p>
+					<button class="button-1" id="t1" onclick="f2()">Выбрать!</button>
+				</div>
+				<div>
+					<p>Тема 3</p>
+					<button class="button-1" id="t1" onclick="f3()">Выбрать!</button>
+				</div>
+			</div>
+
+			<div id="tests1" style="margin-top: 30px;">
+				<p>Программирование</p>
+				<div class="tt1">
+					<p>Какой ты тег Html</p>
+					<a href="./tests/test1-1.html" class="button-1" id="tests1-1">Начать!</a>
+				</div>
+				<div class="tt1">
+					<p>Какой ты цикл</p>
+					<a href="./tests/test1-2.html" class="button-1" id="tests1-2">Начать!</a>
+				</div>
+				<div class="tt1">
+					<p>Какой ты язык программирования</p>
+					<a href="./tests/test1-3.html"  class="button-1" id="tests1-3">Начать!</a>
+				</div>
+				<a href="choice.html" class="rgb-button">В выбор темы</a>
+			</div>
+
+			<div id="tests2">
+				<p>Случайные тесты!</p>
+				<div class="tt1">
+					<p>Какая ты туалетная бумага</p>
+					<a href="./tests/test2-1.html" class="button-1" id="tests2-1">Начать!</a>
+				</div>
+				<a href="choice.html" class="rgb-button">В выбор темы</a>
+			</div>
+
+			<div id="tests3">
+				<p>Тестов пока нет(</p>
+				<a href="choice.html" class="rgb-button">В выбор темы</a>
+			</div>
+		</div>
+	</body>
+
+	<script>
+		function f1() {
+			document.getElementById('themes').style.display = "none";
+			document.getElementById('tests1').style.display = "contents";
+		}
+		function f2() {
+			document.getElementById('themes').style.display = "none";
+			document.getElementById('tests2').style.display = "contents";
+		}
+		function f3() {
+			document.getElementById('themes').style.display = "none";
+			document.getElementById('tests3').style.display = "contents";
+		}
+	</script>
+</html>

@@ -1,0 +1,19 @@
+.vopros {
+	display: none;
+}
+#n1 {
+	display: contents;
+}
+.rez {
+	display: none;
+}
+.vopros p {
+	font-size: 200%;
+	margin: 15px
+}
+.rez h1 {
+	margin: 30px;
+}
+.rgb-button {
+	margin: 5px;
+}

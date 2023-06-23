@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<title>Главная страница</title>
+		<link rel="stylesheet" href="../../css/css.css">
+		<link rel="stylesheet" href="test.css">
+	</head>
+
+	<body>
+
+		<header>
+			<!-- <div class="lending"> -->
+			<h1>Тесты</h1>
+			<h2>Множество тестов на ваш вкус</h2>
+			<!-- </div> -->
+			
+			<a href="../index.html" class="button-2">Главная</a>
+			<a href="../	choice.html" class="button-2">Тесты</a>	
+		</header>
+
+
+		<div id="n1" class="vopros">
+			<p>Что вам больше нравится</p>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Быть главным</button>
+			<button class="rgb-button" onclick="document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Направлять</button>
+			<button class="rgb-button" onclick="document.getElementById('n1').style.display = 'none'; document.getElementById('n2').style.display = 'contents';">Читать книги</button>
+		</div>
+		<div id="n2" class="vopros">
+			<p>Ваша цель в жизни</p>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">Стать богатым</button>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">Стать бомжом</button>
+			<button class="rgb-button" onclick="document.getElementById('n2').style.display = 'none'; document.getElementById('n3').style.display = 'contents';">У меня нет цели в жизни</button>
+		</div>
+		<div id="n3" class="vopros">
+			<p>Вы знаете Даниила Ченченко?</p>
+			<button class="rgb-button" class="rgb-button" onclick="count+=1; document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Да</button>
+			<button class="rgb-button" class="rgb-button" onclick="document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Нет</button>
+			<button class="rgb-button" class="rgb-button" onclick="count+=2; document.getElementById('n3').style.display = 'none'; document.getElementById('n4').style.display = 'contents';">Он мой краш</button>
+		</div>
+		<div id="n4" class="vopros">
+			<p>Вы бы пошли за стаей, или вели бы?</p>
+			<button class="rgb-button" onclick="document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Пошёл</button>
+			<button class="rgb-button" onclick="document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Повёл</button>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n4').style.display = 'none'; document.getElementById('n5').style.display = 'contents';">Я не волк чтобы быть в стае</button>
+		</div>
+		<div id="n5" class="vopros">
+			<p>Html - это язык программирования?</p>
+			<button class="rgb-button" onclick="document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Конечно да!</button>
+			<button class="rgb-button" onclick="count+=1; document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Нет</button>
+			<button class="rgb-button" onclick="document.getElementById('n5').style.display = 'none'; document.getElementById('rez').style.display = 'contents'; q()">Кто?</button>
+		</div>
+
+		<div id="rez" class="rez">
+			<h1>Итог, Вы</h1>
+			<h1><div id="vi"></div></h1>
+		</div>
+
+	</body>
+
+	<script>
+		let count = 0;
+		let otv = 'тег';
+		function q(){
+			
+			if (count == 0) {
+				otv = 'тег < p >';
+			}
+			if (count == 1) {
+				otv = 'тег < h2 >';
+			}
+			if (count == 2) {
+				otv = 'тег < a > ';
+			}
+			if (count == 3) {
+				otv = 'тег < h1 >';
+			}
+			if (count == 4) {
+				otv = 'тег < div >';
+			}
+			if (count == 5) {
+				otv = 'тег < body >';
+			}
+			if (count == 6) {
+				otv = 'тег < html >';
+			}
+
+
+			document.getElementById("vi").innerHTML = otv;
+		}
+	</script>
+</html>

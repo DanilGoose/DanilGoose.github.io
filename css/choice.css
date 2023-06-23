@@ -1,0 +1,55 @@
+table {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+tr td {
+	border: solid;
+}
+.choice {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.choice h1 {
+	margin: 10px;
+	font-size: 200%;
+}
+.choice #themes div {
+	display: flex;
+	border-left: 5px double #32a1ce;
+	margin: 10px;
+	padding: 10px;
+	transition: .5s;
+}
+.choice #themes div:hover {
+	border-left: 15px double #32a1ce;
+}
+#tests1, #tests2, #tests3 {
+	display: none;
+}
+.tt1 {
+	margin: 5px;
+	border: 2px solid #2FC7FF;
+	transition: .5s;
+	padding: 5px;
+}
+.tt1:hover {
+	border-right: 1rem #2FC7FF solid;
+	animation: animation_bcr 3s infinite;
+}
+
+@keyframes animation_bcr {
+  0% {
+    border-right-color: #2FC7FF;
+  }
+  33% {
+    border-right-color: #4B97FF;
+  }
+  66% {
+    border-right-color: #7976FF;
+  }
+  100% {
+    border-right-color: #2FC7FF;
+  }
+}
